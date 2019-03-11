@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://HoverableSphere.tscn" type="PackedScene" id=1]
+
+[node name="Scene3D" type="Spatial"]
+
+[node name="HoverableSphere1" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.935945, 0, 0 )
+
+[node name="HoverableSphere2" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.777644, 0, 0 )
+input_capture_on_drag = true
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.88053 )
+keep_aspect = 0
+
